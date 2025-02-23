@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="main" id="chota">
+        <div class="lightblack">
+
+        </div>
+        <div class="nav">
+            <div class="pogo">
+                <img src="assets/svgs/netflix.svg" alt="">
+            </div>
+
+        </div>
+        <div class="box">
+
+        </div>
+        <div class="layer">
+            <h2>
+                Sign In
+            </h2>
+            <form>
+
+                <input type="text" id="email" placeholder="Email or mobile number">
+                <input type="password" id="password" placeholder="Password">
+                <div class="eye" id="open">
+                    <img src="assets/images/eye.png" alt="eye">
+                </div>
+                <div class="eye" id="close">
+                    <img src="assets/images/closedEYE.png" alt="closedEYE">
+                </div>
+                 
+                <div class="btn2" id="button">
+                    <a href="">Sign In</a>
+                </div>
+                <p class="or">OR</p>
+                <button class="use">use a sign-in code</button>
+                <div class="whitelayer">
+                    
+                </div>
+                <div class="forget">
+                    <a href="">Forget Password?</a>
+                </div>
+                <div class="btcard">
+                    <input type="checkbox" id="check">
+                    <label for="check" id="remem">Remember me</label>
+                    
+                    <h4>New to Netflix?<a href="">Sign up now</a></h4>
+
+                    <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+
+                    <a href="" class="Learn">Learn more</a>
+                </div>
+            </form>
+            <br>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="inner">
+           <div class="upper">
+            <span>Questions? Call <a href="tel:000-800-919-1743">000-800-919-1743 (Toll-Free)</a></span>
+        </div>
+        <div class="hinglish">
+            <h3>English</h3>
+            <h3>हिन्दी</h3>
+        </div>     
+        <ul  id="st">
+            <li>FAQ</li>
+            <li>Help Center</li>
+            <li>Term Of Use</li>
+            <li>Privacy</li>
+        </ul> 
+        <ul id="nd">
+            <li>Cookie Preference</li>
+            <li>Corporate Information</li>
+        </ul> 
+                
+        <button class="button"><img src="assets/svgs/lang.svg" alt=""> English <img src="assets/svgs/downArrow.svg" alt="">
+        </button>
+            
+    </div>
+
+</body>
+    <script>
+        const hing=document.querySelector('.hinglish')      
+        
+        const btn=document.querySelector('.button')
+        btn.addEventListener('click',function () {
+           if (hing.style.display=='block') {
+            hing.style.display='none'
+           } 
+           else{
+           hing.style.display='block'
+           }
+                      
+        });
+        const password=document.querySelector('#password')   
+        const open=document.querySelector('#open')
+        const close=document.querySelector('#close')
+        open.addEventListener('click',function(){
+            console.log('openclicked');
+            
+                open.style.opacity='0'
+                open.style.transform='scale(0.8)'
+                open.style.zIndex='3'
+                                
+                close.style.opacity='1'
+                close.style.transform='scale(1)'
+                close.style.zIndez='4'
+                
+                password.type='text'                
+            })
+        close.addEventListener('click', function(){
+            console.log('closeclicked');
+            
+                close.style.opacity='0'
+                close.style.transform='scale(0.8)'
+                close.style.zIndex='3'
+                                
+                open.style.opacity='1'
+                open.style.transform='scale(1)'
+                open.style.zIndex='4'
+                
+                password.type='password'
+
+        })
+        
+        
+        
+        
+    </script>
+
+</html>

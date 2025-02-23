@@ -1,0 +1,64 @@
+.hinglish{
+    display: none;
+    top: 9.5vw;
+    position: absolute;
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    width: 8vw;
+    height:4.2vw;
+    border-radius: 2px;
+   
+   flex-direction: column;
+   line-height:3.7vh ;
+   padding: 2px;
+   font-size: .8vw;
+   overflow: hidden;
+}
+
+.hinglish h3:hover{
+    background-color: #524f4f;
+    color: white;
+    
+}
+
+
+.eye {
+    position: absolute;
+    top: 30.5vh;
+    left: 49vh;
+    width: 22px;
+    height: 22px;
+    z-index: 3;
+    border-radius: 1vw;
+    transition: opacity 0.3s ease-in-out,transform 0.3s ease-in-out,zIndex 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+#close {
+    position: absolute;
+   opacity: 0;
+   transform: scale(0.8);
+   z-index: 3;
+}
+#open{
+    position: absolute;
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+    z-index: 4;
+}
+
+#password{
+    transition: opacity 0.3 ease-in-out;
+}
+
+
+.forget a:hover{
+   color: #b2b2b2;
+   z-index: 3;
+}
+
+.btcard h4 a:hover{
+    text-decoration: underline;
+}
